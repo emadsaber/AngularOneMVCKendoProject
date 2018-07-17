@@ -8,24 +8,55 @@ namespace AngularOneMVCKendoProject
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            #region Common
+            
+            #region Scripts
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                                "~/Assets/Scripts/Common/jquery.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                            "~/Assets/Scripts/Common/angular.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Assets/Scripts/Common/bootstrap.js",
+                      "~/Assets/Scripts/Common/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
+                            "~/Assets/Scripts/Common/kendo.aspnetmvc.min.js",
+                            "~/Assets/Scripts/Common/kendo.aspnetmvc.min.js"));
+            #endregion
+
+            #region Styles
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                  "~/Assets/Styles/Common/bootstrap.css",
+                  "~/Assets/Styles/Main/MainStyle.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+                  "~/Assets/Styles/Common/bootstrap.css"));
+
+            bundles.Add(new StyleBundle("~/Content/kendo").Include(
+                  "~/Assets/Styles/Common/kendo.common.min.css",
+                  "~/Assets/Styles/Common/kendo.default.min.css",
+                  "~/Assets/Styles/Common/kendo.fiori.min.css",
+                  "~/Assets/Styles/Common/kendo.rtl.min.css"
+                  ));
+            #endregion
+
+            #endregion
+
+            #region Modules
+
+            #region Main
+
+            bundles.Add(new ScriptBundle("~/bundles/Modules/Main").Include(
+                    "~/Assets/Scripts/Modules/Main/Controllers/MainController.js",
+                    "~/Assets/Scripts/Modules/Main/Services/MainService.js",
+                    "~/Assets/Scripts/Modules/Main/MainApp.js")); 
+
+            #endregion
+
+            #endregion
         }
     }
 }

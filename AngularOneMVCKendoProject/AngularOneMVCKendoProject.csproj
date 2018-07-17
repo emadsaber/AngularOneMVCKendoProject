@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Kendo.Mvc">
+      <HintPath>..\packages\Kendo.MVC\Kendo.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -167,29 +170,41 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\Main\main.png" />
+    <Content Include="Assets\Scripts\Common\angular.min.js" />
+    <Content Include="Assets\Scripts\Common\jquery.min.js" />
+    <Content Include="Assets\Scripts\Common\kendo.aspnetmvc.min.js" />
     <Content Include="Assets\Scripts\Modules\Main\Controllers\MainController.js" />
     <Content Include="Assets\Scripts\Modules\Main\MainApp.js" />
     <Content Include="Assets\Scripts\Modules\Main\Services\MainService.js" />
+    <Content Include="Assets\Styles\Common\Fiori\editor.png" />
+    <Content Include="Assets\Styles\Common\Fiori\imagebrowser.png" />
+    <Content Include="Assets\Styles\Common\Fiori\indeterminate.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\loading-image.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\loading.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\loading_2x.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\markers.png" />
+    <Content Include="Assets\Styles\Common\Fiori\markers_2x.png" />
+    <Content Include="Assets\Styles\Common\Fiori\slider-h.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\slider-v.gif" />
+    <Content Include="Assets\Styles\Common\Fiori\sprite.png" />
+    <Content Include="Assets\Styles\Common\Fiori\sprite_2x.png" />
+    <Content Include="Assets\Styles\Common\Fiori\sprite_kpi.png" />
+    <Content Include="Assets\Styles\Common\Fiori\sprite_kpi_2x.png" />
+    <Content Include="Assets\Styles\Common\kendo.common.min.css" />
+    <Content Include="Assets\Styles\Common\kendo.default.min.css" />
+    <Content Include="Assets\Styles\Common\kendo.fiori.min.css" />
+    <Content Include="Assets\Styles\Common\kendo.rtl.min.css" />
     <Content Include="Assets\Styles\Main\MainStyle.css" />
-    <Content Include="Assets\Styles\bootstrap.css" />
-    <Content Include="Assets\Styles\bootstrap.min.css" />
+    <Content Include="Assets\Styles\Common\bootstrap.css" />
+    <Content Include="Assets\Styles\Common\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Assets\Styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Assets\Scripts\Common\bootstrap.js" />
+    <Content Include="Assets\Scripts\Common\bootstrap.min.js" />
+    <Content Include="Assets\Scripts\Common\respond.js" />
+    <Content Include="Assets\Scripts\Common\respond.min.js" />
+    <Content Include="Assets\Scripts\Common\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -207,12 +222,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Styles\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Assets\Styles\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Assets\Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
