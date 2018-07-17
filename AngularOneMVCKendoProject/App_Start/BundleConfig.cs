@@ -54,9 +54,10 @@ namespace AngularOneMVCKendoProject
             #region Main
 
             bundles.Add(new ScriptBundle("~/bundles/Modules/Main").Include(
+                "~/Assets/Scripts/Modules/Main/MainApp.js",
                 "~/Assets/Scripts/Modules/Main/Controllers/MainController.js",
-                "~/Assets/Scripts/Modules/Main/Services/MainService.js",
-                "~/Assets/Scripts/Modules/Main/MainApp.js"));
+                "~/Assets/Scripts/Modules/Main/Services/MainService.js"
+                ));
 
             #endregion
 

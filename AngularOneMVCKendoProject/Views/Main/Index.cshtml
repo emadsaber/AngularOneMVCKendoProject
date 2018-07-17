@@ -5,17 +5,18 @@
 }
 
 <h2>Main View</h2>
-<div ng-app="">
-    {{"Angular loaded"}}
-
-    <button id="mybtn" class="k-primary k-button" value="Click Me" kendo-button>Kendo</button>
+<div ng-app="mainApp" ng-controller="mainController">
+    {{"Value from controller: " + testVar}}
+    <br/>
+    <input type="button" id="mybtn" class="k-primary k-button" value="Click Me" ng-click="showHello()"/>
     <input id="datepicker" value="10/10/2011" title="datepicker" />
-</div>
 
-@Scripts.Render("~/bundles/Modules/Main")
+    @Scripts.Render("~/bundles/Modules/Main")
+</div>
 
 @section scripts{
         <script>
             jQuery('#datepicker').kendoDatePicker();
+            jQuery('#mybtn').kendoButton();
         </script>
     }
