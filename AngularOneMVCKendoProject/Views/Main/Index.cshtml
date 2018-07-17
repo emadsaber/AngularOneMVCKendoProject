@@ -7,11 +7,15 @@
 <h2>Main View</h2>
 <div ng-app="">
     {{"Angular loaded"}}
+
+    <button id="mybtn" class="k-primary k-button" value="Click Me" kendo-button>Kendo</button>
+    <input id="datepicker" value="10/10/2011" title="datepicker" />
 </div>
 
-@(Html.Kendo().Button()
-        .Name("primaryTextButton")
-        .HtmlAttributes(new { type = "button", @class = "k-primary" })
-        .Content("Primary Button"))
-
 @Scripts.Render("~/bundles/Modules/Main")
+
+@section scripts{
+        <script>
+            jQuery('#datepicker').kendoDatePicker();
+        </script>
+    }

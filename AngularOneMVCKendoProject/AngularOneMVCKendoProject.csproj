@@ -41,9 +41,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Kendo.Mvc">
-      <HintPath>..\packages\Kendo.MVC\Kendo.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -108,56 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Core">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Owin">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Owin">
-      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook">
-      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies">
-      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google">
-      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter">
-      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
-      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -172,10 +119,25 @@
     <Content Include="Assets\Images\Main\main.png" />
     <Content Include="Assets\Scripts\Common\angular.min.js" />
     <Content Include="Assets\Scripts\Common\jquery.min.js" />
-    <Content Include="Assets\Scripts\Common\kendo.aspnetmvc.min.js" />
+    <Content Include="Assets\Scripts\Common\kendo.all.min.js" />
     <Content Include="Assets\Scripts\Modules\Main\Controllers\MainController.js" />
     <Content Include="Assets\Scripts\Modules\Main\MainApp.js" />
     <Content Include="Assets\Scripts\Modules\Main\Services\MainService.js" />
+    <Content Include="Assets\Styles\Common\Black\editor.png" />
+    <Content Include="Assets\Styles\Common\Black\imagebrowser.png" />
+    <Content Include="Assets\Styles\Common\Black\indeterminate.gif" />
+    <Content Include="Assets\Styles\Common\Black\loading-image.gif" />
+    <Content Include="Assets\Styles\Common\Black\loading.gif" />
+    <Content Include="Assets\Styles\Common\Black\loading_2x.gif" />
+    <Content Include="Assets\Styles\Common\Black\markers.png" />
+    <Content Include="Assets\Styles\Common\Black\markers_2x.png" />
+    <Content Include="Assets\Styles\Common\Black\slider-h.gif" />
+    <Content Include="Assets\Styles\Common\Black\slider-v.gif" />
+    <Content Include="Assets\Styles\Common\Black\sprite.png" />
+    <Content Include="Assets\Styles\Common\Black\sprite_2x.png" />
+    <Content Include="Assets\Styles\Common\Black\sprite_kpi.png" />
+    <Content Include="Assets\Styles\Common\Black\sprite_kpi_2x.png" />
+    <Content Include="Assets\Styles\Common\images\back.png" />
     <Content Include="Assets\Styles\Common\Fiori\editor.png" />
     <Content Include="Assets\Styles\Common\Fiori\imagebrowser.png" />
     <Content Include="Assets\Styles\Common\Fiori\indeterminate.gif" />
@@ -190,10 +152,16 @@
     <Content Include="Assets\Styles\Common\Fiori\sprite_2x.png" />
     <Content Include="Assets\Styles\Common\Fiori\sprite_kpi.png" />
     <Content Include="Assets\Styles\Common\Fiori\sprite_kpi_2x.png" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="Assets\Styles\Common\kendo.black.min.css" />
     <Content Include="Assets\Styles\Common\kendo.common.min.css" />
-    <Content Include="Assets\Styles\Common\kendo.default.min.css" />
     <Content Include="Assets\Styles\Common\kendo.fiori.min.css" />
     <Content Include="Assets\Styles\Common\kendo.rtl.min.css" />
+    <Content Include="Assets\Styles\Common\images\kendoui.svg" />
+    <Content Include="Assets\Styles\Common\images\wp8_icons.png" />
+    <Content Include="Assets\Styles\Common\images\wp8_inverseicons.png" />
     <Content Include="Assets\Styles\Main\MainStyle.css" />
     <Content Include="Assets\Styles\Common\bootstrap.css" />
     <Content Include="Assets\Styles\Common\bootstrap.min.css" />
@@ -226,6 +194,27 @@
     <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Assets\Styles\Common\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="Assets\Styles\Common\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="Assets\Styles\Common\images\kendoui.ttf" />
+    <Content Include="Assets\Styles\Common\images\kendoui.woff" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
